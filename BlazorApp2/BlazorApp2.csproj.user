@@ -2,6 +2,6 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\Properties\PublishProfiles\BlazorApp220230112144721 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>BlazorApp220230112144721 - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
