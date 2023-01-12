@@ -1,0 +1,7 @@
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Release\net7.0\PubTmp\Out\BlazorApp2.exe
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Release\net7.0\PubTmp\Out\BlazorApp2.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Release\net7.0\PubTmp\Out\BlazorApp2.deps.json
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Release\net7.0\PubTmp\Out\BlazorApp2.runtimeconfig.json
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Release\net7.0\PubTmp\Out\BlazorApp2.pdb
