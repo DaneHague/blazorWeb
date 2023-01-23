@@ -30,3 +30,13 @@ C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Debug\net7.0\refint\BlazorA
 C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Debug\net7.0\BlazorApp2.pdb
 C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Debug\net7.0\BlazorApp2.genruntimeconfig.cache
 C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Debug\net7.0\ref\BlazorApp2.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\AngleSharp.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\AngleSharp.Css.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\AngleSharp.Diffing.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Bunit.Core.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\AngleSharpWrappers.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Bunit.Web.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Debug\net7.0\BlazorApp2.csproj.CopyComplete

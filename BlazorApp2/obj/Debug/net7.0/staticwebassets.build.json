@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9emJyY1B25mXOmPVIpz2hZWhTjYSh4HH2qltN9F810o=",
+  "Hash": "QUZP1CMjWF0fF4FFsqBSY3643a+W1UMh2dJRLhioaa4=",
   "Source": "BlazorApp2",
   "BasePath": "_content/BlazorApp2",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Dane\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.0\\staticwebassets\\AuthenticationService.js",
+      "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Dane\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.0\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "RelativePath": "AuthenticationService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Dane\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.0\\staticwebassets\\AuthenticationService.js"
+    },
     {
       "Identity": "C:\\Users\\Dane\\source\\repos\\BlazorApp2\\BlazorApp2\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazorApp2.styles.css",
       "SourceId": "BlazorApp2",
