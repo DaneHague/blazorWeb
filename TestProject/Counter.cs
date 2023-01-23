@@ -12,7 +12,7 @@ namespace TestProject
             var cut = ctx.RenderComponent<Counter>();
             cut.Find("button").Click();
 
-            cut.Find("p").MarkupMatches("<p role=\"status\">Current count: 1111</p>");
+            cut.Find("p").MarkupMatches("<p role=\"status\">Current count: 1</p>");
         }
     }
 }
