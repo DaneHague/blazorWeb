@@ -30,7 +30,18 @@ steps:
 
 - task: VSTest@2
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+             **\*test.dll
+             !**\*TestAdapter.dll
+             !**\obj\**
+    runInParallel: true
+    codeCoverageEnabled: true
+    publishRunAttachments: true
+    configuration: $(buildConfiguration)
+#    runSettingsFile: 'Test.runsettings'
+    testRunTitle: $(Agent.JobName)
+    diagnosticsEnabled: true
+    collectDumpOn: 'always'
 
 - task: PublishBuildArtifacts@1
