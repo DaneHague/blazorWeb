@@ -32,7 +32,7 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-             **\*test.dll
+             **\*testhost.dll
              !**\*TestAdapter.dll
              !**\obj\**
     runInParallel: true
