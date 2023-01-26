@@ -29,6 +29,26 @@
 
             List<Item> divCards = stash.stash.items;
 
+            foreach (var item in divCards)
+            {
+                if (item.flavourText != null)
+                {
+                    foreach (var txt in item.flavourText)
+                    {
+                        item.cardText += txt + " ";
+                    }
+                }
+                else
+                {
+                    item.cardText = " ";
+                }
+
+                item.cardText = item.cardText.Replace("<size:23>", "").Replace("<size:24>", "").Replace("<size:25>", "").Replace("<size:26>", "").Replace("<size:27>", "").Replace("<size:28>", "").Replace("<size:29>", "")
+                .Replace("<size:30>", "").Replace("<size:31>", "").Replace("<size:32>", "").Replace("<size:33>", "")
+                .Replace("{", "").Replace("}","");
+
+            }
+
             var req = new HttpRequestMessage(HttpMethod.Post, $"{Configuration.GetSection("MyApiEndpoint").Value}/DivinationCards");
 
             var tsta = JsonSerializer.Serialize(divCards);

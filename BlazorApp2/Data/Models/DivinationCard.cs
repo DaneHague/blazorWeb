@@ -17,6 +17,10 @@
         public int ilvl { get; set; }
         public int frameType { get; set; }
         public string artFilename { get; set; }
+
+        public string flavourText { get; set; }
+
+        public string cardText { get; set; }
         public int x { get; set; }
         public int y { get; set; }
         public string inventoryId { get; set; }

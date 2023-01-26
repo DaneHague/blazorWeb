@@ -16,6 +16,9 @@
         <th>
             Max Stack
         </th>
+        <th>
+            Text
+        </th>
     </tr>
     
         @foreach (DivinationCard card in divCardList)
@@ -24,6 +27,7 @@
                 <td>@card.baseType</td>
                 <td>@card.stackSize</td>
                 <td>@card.maxStackSize</td>
+                <td>@card.cardText</td>
             </tr>
         }
 </table>

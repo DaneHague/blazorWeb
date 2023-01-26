@@ -19,6 +19,7 @@
         public List<Property> properties { get; set; }
         public List<string> explicitMods { get; set; }
         public List<string> flavourText { get; set; }
+        public string cardText { get; set; }
         public int frameType { get; set; }
         public string artFilename { get; set; }
         public int x { get; set; }
