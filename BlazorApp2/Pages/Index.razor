@@ -6,5 +6,51 @@
 
 This product isn't affiliated with or endorsed by Grinding Gear Games in any way.
 Thank you for the API access.
+<br />
+<br />
+<h3>About</h3>
+
+This application is for demonstration purposes and learning purposes.
+
+<br />
+<br />
+
+<h3>Technologies used:</h3>
+<ul>
+    <li>
+        Azure pipelines for CI/CD
+    </li>
+    <li>
+        Azure Key Vault (For API)
+    </li>
+    <li>
+        Blazor
+    </li>
+    <li>
+        bUnit for unit testing Blazor
+    </li>
+    <li>
+        Entity framework / .net API / MSSQL
+    </li>
+    <li>
+        <a href="https://github.com/DaneHague/blazorWeb" target="_blank">Github Code</a>
+    </li>
+</ul>
+
+<h3>How this web app works:</h3>
+The divination cards are in my character's stash tab (in game). Using GGG's API I get the data (using a bearer token locked in an Azure key vault).
+<br />
+I then take the data and send it to my own API where it is stored in my database.
+<br />
+I currently manually trigger the event but looking forward I could implement something to do it for me at certain times (daily?).
+
+<br />
+<br />
+<h3>CI/CD:</h3>
+I'm using Github to store my code. I'm using Azure and Azure pipelines to host and take care of CI/CD.
+<br />
+I use Azure pipelines to watch for changes on the master branch on my github for this project. It will then do various things such as build the project and run my unit tests.
+<br />
+If anything fails it will inform me, however if everything passes then it will automatically push to production.
 
 

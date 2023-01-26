@@ -1,6 +1,47 @@
 ﻿@page "/divcards"
+@using BlazorApp2.Data.Models;
+@using System.Text.Json;
+@inject IHttpClientFactory ClientFactory
+@inject IConfiguration Configuration
 <h3>Divination Cards</h3>
 
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Cards Owned
+        </th>
+        <th>
+            Max Stack
+        </th>
+    </tr>
+    
+        @foreach (DivinationCard card in divCardList)
+        {
+            <tr>
+                <td>@card.baseType</td>
+                <td>@card.stackSize</td>
+                <td>@card.maxStackSize</td>
+            </tr>
+        }
+</table>
 @code {
+
+    List<DivinationCard> divCardList = new List<DivinationCard>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://blazorapi20230112152353.azurewebsites.net/api/DivinationCards");
+
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        var cards = await response.Content.ReadFromJsonAsync<List<DivinationCard>>();
+        divCardList = cards;
+    }
 
 }
