@@ -24,8 +24,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Dane/source/repos/BlazorApp2/BlazorApp2/Pages/Admin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Dane/source/repos/BlazorApp2/BlazorApp2/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dane/source/repos/BlazorApp2/BlazorApp2/Pages/DivCards.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGl2Q2FyZHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Dane/source/repos/BlazorApp2/BlazorApp2/Pages/Index.razor]
