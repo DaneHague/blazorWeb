@@ -1,8 +1,43 @@
 ﻿@page "/admin"
+@using BlazorApp2.Data.Models;
+@using System.Text.Json;
+@inject IHttpClientFactory ClientFactory
+@inject IConfiguration Configuration
 
 <h3>Admin</h3>
 
-<button class="btn-primary btn">Click for Div Cards</button>
+<button @onclick="GetDivCards" class="btn-primary btn">Get Div Cards</button>
 @code {
+    private Stash stash = new Stash();
 
+    protected async Task GetDivCards()
+    {
+
+        var request = new HttpRequestMessage(HttpMethod.Get, Configuration.GetSection("PoeStashEndpoint").Value);
+
+        var client = ClientFactory.CreateClient();
+
+        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Configuration.GetSection("PoEStashKey:ApiKey").Value);
+
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var tst = ClientFactory.CreateClient();
+
+            var stash = await response.Content.ReadFromJsonAsync<Root>();
+
+            List<Item> divCards = stash.stash.items;
+
+            var req = new HttpRequestMessage(HttpMethod.Post, $"{Configuration.GetSection("MyApiEndpoint").Value}/DivinationCards");
+
+            var tsta = JsonSerializer.Serialize(divCards);
+
+            req.Content = new StringContent(JsonSerializer.Serialize(divCards), System.Text.Encoding.UTF8, "application/json");
+
+            var rsp = await tst.SendAsync(req);
+
+        }
+        
+    }
 }
