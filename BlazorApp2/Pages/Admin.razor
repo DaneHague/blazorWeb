@@ -29,6 +29,7 @@
 
             List<Item> divCards = stash.stash.items;
 
+            // Clean up the text and use one prop
             foreach (var item in divCards)
             {
                 if (item.flavourText != null)
@@ -46,6 +47,20 @@
                 item.cardText = item.cardText.Replace("<size:23>", "").Replace("<size:24>", "").Replace("<size:25>", "").Replace("<size:26>", "").Replace("<size:27>", "").Replace("<size:28>", "").Replace("<size:29>", "")
                 .Replace("<size:30>", "").Replace("<size:31>", "").Replace("<size:32>", "").Replace("<size:33>", "").Replace("<size:34>", "")
                 .Replace("{", "").Replace("}", "").Replace("<smaller>", "");
+
+            }
+
+            // Clean up the reward text
+
+            foreach (var item in divCards)
+            {
+                if (item.explicitMods != null)
+                {
+                    foreach (var mod in item.explicitMods)
+                    {
+                        item.rewardText += mod + " ";
+                    }
+                }
 
             }
 

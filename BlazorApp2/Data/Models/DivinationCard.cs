@@ -21,6 +21,7 @@
         public string flavourText { get; set; }
 
         public string cardText { get; set; }
+        public string rewardText { get; set; }
         public int x { get; set; }
         public int y { get; set; }
         public string inventoryId { get; set; }

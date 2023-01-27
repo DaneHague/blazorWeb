@@ -5,31 +5,38 @@
 @inject IConfiguration Configuration
 <h3>Divination Cards</h3>
 
-<table>
-    <tr>
-        <th>
-            Name
-        </th>
-        <th>
-            Cards Owned
-        </th>
-        <th>
-            Max Stack
-        </th>
-        <th>
-            Text
-        </th>
-    </tr>
-    
+<table class="table ">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Cards Owned
+            </th>
+            <th>
+                Max Stack
+            </th>
+            <th>
+                Text
+            </th>
+            <th>
+                Reward
+            </th>
+        </tr>
+    </thead>
+    <tbody>
         @foreach (DivinationCard card in divCardList)
         {
             <tr>
                 <td>@card.baseType</td>
-                <td>@card.stackSize</td>
-                <td>@card.maxStackSize</td>
+                <td style="background-color: @(card.stackSize >= card.maxStackSize ? "#6aa84f" : "#cc0000")">@card.stackSize</td>
+                <td style="background-color: @(card.stackSize >= card.maxStackSize ? "#6aa84f" : "#cc0000")">@card.maxStackSize</td>
                 <td>@card.cardText</td>
+                <td>@card.rewardText</td>
             </tr>
         }
+    </tbody>
 </table>
 @code {
 

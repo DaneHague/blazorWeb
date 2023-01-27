@@ -18,6 +18,7 @@
         public int ilvl { get; set; }
         public List<Property> properties { get; set; }
         public List<string> explicitMods { get; set; }
+        public string rewardText { get; set; }
         public List<string> flavourText { get; set; }
         public string cardText { get; set; }
         public int frameType { get; set; }
