@@ -1,9 +1,13 @@
 ﻿@page "/currency"
+@using BlazorApp2.Data.Models;
+@using System.Text.Json;
+@inject IHttpClientFactory ClientFactory
+@inject IConfiguration Configuration
 @inherits CurrencyContainer
 
 <h3>Currency</h3>
 
-<button class="btn btn-primary">Update Currency</button>
+<button class="btn btn-primary" onclick="@getCurrency()">Update Currency</button>
 
 <CurrencyContainer currName="trololol" currStackSize="" currMaxStackSize="">
 
@@ -11,5 +15,36 @@
 
 
 @code {
-    
+
+
+    protected async Task getCurrency()
+    {
+
+        var request = new HttpRequestMessage(HttpMethod.Get, Configuration.GetSection("PoeCurrencyEndPoint").Value);
+        var client = ClientFactory.CreateClient();
+        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Configuration.GetSection("PoEStashKey:ApiKey").Value);
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var tst = ClientFactory.CreateClient();
+            var stash = await response.Content.ReadFromJsonAsync<CurrencyRoot>();
+            List<CurrencyItem> currency = stash.stash.items;
+            foreach (var item in currency)
+            {
+                item.cardText = "";
+                item.artFilename = "";
+                item.rewardText = "";
+
+            }
+
+            var req = new HttpRequestMessage(HttpMethod.Post, "https://localhost:7004/api/Currencies");
+
+            req.Content = new StringContent(JsonSerializer.Serialize(currency), System.Text.Encoding.UTF8, "application/json");
+            var rsp = await tst.SendAsync(req);
+            
+
+        }
+
+    }
 }

@@ -8,7 +8,7 @@
 
 <button @onclick="GetDivCards" class="btn-primary btn">Get Div Cards</button>
 @code {
-    private Stash stash = new Stash();
+    
 
     protected async Task GetDivCards()
     {
@@ -65,8 +65,6 @@
             }
 
             var req = new HttpRequestMessage(HttpMethod.Post, $"{Configuration.GetSection("MyApiEndpoint").Value}/DivinationCards");
-
-            var tsta = JsonSerializer.Serialize(divCards);
 
             req.Content = new StringContent(JsonSerializer.Serialize(divCards), System.Text.Encoding.UTF8, "application/json");
 
