@@ -32,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Dane/source/repos/BlazorApp2/BlazorApp2/Pages/Currency.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VycmVuY3kucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dane/source/repos/BlazorApp2/BlazorApp2/Pages/CurrencyContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VycmVuY3lDb250YWluZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Dane/source/repos/BlazorApp2/BlazorApp2/Pages/DivCards.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGl2Q2FyZHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
