@@ -9,12 +9,39 @@
 
 <button class="btn btn-primary" onclick="@getCurrency()">Update Currency</button>
 
+<table class="table ">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Owned
+            </th>
+            <th>
+                Text
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CurrencyItem curr in currencyList)
+        {
+            <tr>
+                <td>@curr.baseType</td>
+                <td>@curr.stackSize</td>
+                <td>@curr.cardText</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
 <CurrencyContainer currName="trololol" currStackSize="" currMaxStackSize="">
 
 </CurrencyContainer>
 
 
 @code {
+
 
 
     protected async Task getCurrency()
@@ -32,13 +59,13 @@
             List<CurrencyItem> currency = stash.stash.items;
             foreach (var item in currency)
             {
-                item.cardText = "";
+                item.cardText = item.typeLine;
                 item.artFilename = "";
                 item.rewardText = "";
 
             }
 
-            var req = new HttpRequestMessage(HttpMethod.Post, "https://localhost:7004/api/Currencies");
+            var req = new HttpRequestMessage(HttpMethod.Post, $"{Configuration.GetSection("MyApiEndpoint").Value}/Currencies");
 
             req.Content = new StringContent(JsonSerializer.Serialize(currency), System.Text.Encoding.UTF8, "application/json");
             var rsp = await tst.SendAsync(req);
@@ -46,5 +73,17 @@
 
         }
 
+    }
+
+    List<CurrencyItem> currencyList = new List<CurrencyItem>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://blazorapi20230112152353.azurewebsites.net/api/Currencies");
+        var client = ClientFactory.CreateClient();
+        var response = await client.SendAsync(request);
+        var currency = await response.Content.ReadFromJsonAsync<List<CurrencyItem>>();
+        currencyList = currency;
     }
 }
