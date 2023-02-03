@@ -6,71 +6,9 @@
 
 <h3>Admin</h3>
 
-<button @onclick="GetDivCards" class="btn-primary btn">Get Div Cards</button>
+
 @code {
     
 
-    protected async Task GetDivCards()
-    {
-
-        var request = new HttpRequestMessage(HttpMethod.Get, Configuration.GetSection("PoeStashEndpoint").Value);
-
-        var client = ClientFactory.CreateClient();
-
-        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Configuration.GetSection("PoEStashKey:ApiKey").Value);
-
-        var response = await client.SendAsync(request);
-
-        if (response.IsSuccessStatusCode)
-        {
-            var tst = ClientFactory.CreateClient();
-
-            var stash = await response.Content.ReadFromJsonAsync<Root>();
-
-            List<Item> divCards = stash.stash.items;
-
-            // Clean up the text and use one prop
-            foreach (var item in divCards)
-            {
-                if (item.flavourText != null)
-                {
-                    foreach (var txt in item.flavourText)
-                    {
-                        item.cardText += txt + " ";
-                    }
-                }
-                else
-                {
-                    item.cardText = " ";
-                }
-
-                item.cardText = item.cardText.Replace("<size:23>", "").Replace("<size:24>", "").Replace("<size:25>", "").Replace("<size:26>", "").Replace("<size:27>", "").Replace("<size:28>", "").Replace("<size:29>", "")
-                .Replace("<size:30>", "").Replace("<size:31>", "").Replace("<size:32>", "").Replace("<size:33>", "").Replace("<size:34>", "")
-                .Replace("{", "").Replace("}", "").Replace("<smaller>", "");
-
-            }
-
-            // Clean up the reward text
-
-            foreach (var item in divCards)
-            {
-                if (item.explicitMods != null)
-                {
-                    foreach (var mod in item.explicitMods)
-                    {
-                        item.rewardText += mod + " ";
-                    }
-                }
-
-            }
-
-            var req = new HttpRequestMessage(HttpMethod.Post, $"{Configuration.GetSection("MyApiEndpoint").Value}/DivinationCards");
-
-            req.Content = new StringContent(JsonSerializer.Serialize(divCards), System.Text.Encoding.UTF8, "application/json");
-
-            var rsp = await tst.SendAsync(req);
-
-        }
-        
-    }
+    
 }

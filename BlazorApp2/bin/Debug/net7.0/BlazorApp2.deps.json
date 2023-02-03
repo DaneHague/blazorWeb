@@ -12,6 +12,7 @@
           "Azure.Identity": "1.8.1",
           "Azure.Security.KeyVault.Secrets": "4.4.0",
           "Microsoft.Identity.Client": "4.49.1",
+          "Syncfusion.Blazor.Charts": "20.4.0.48",
           "bunit.core": "1.14.4",
           "bunit.web": "1.14.4"
         },
@@ -351,6 +352,71 @@
         }
       },
       "Microsoft.NETCore.Platforms/5.0.0": {},
+      "Syncfusion.Blazor.Charts/20.4.0.48": {
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "20.4.0.48",
+          "Syncfusion.Blazor.Data": "20.4.0.48",
+          "Syncfusion.Blazor.DataVizCommon": "20.4.0.48",
+          "Syncfusion.PdfExport.Net.Core": "20.4.0.48"
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Blazor.Charts.dll": {
+            "assemblyVersion": "20.4.0.48",
+            "fileVersion": "20.4.0.48"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Core/20.4.0.48": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "7.0.0",
+          "Syncfusion.Licensing": "20.4.0.48",
+          "System.Text.Json": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Blazor.Core.dll": {
+            "assemblyVersion": "20.4.0.48",
+            "fileVersion": "20.4.0.48"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Data/20.4.0.48": {
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "20.4.0.48"
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Blazor.Data.dll": {
+            "assemblyVersion": "20.4.0.48",
+            "fileVersion": "20.4.0.48"
+          }
+        }
+      },
+      "Syncfusion.Blazor.DataVizCommon/20.4.0.48": {
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "20.4.0.48"
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Blazor.DataVizCommon.dll": {
+            "assemblyVersion": "20.4.0.48",
+            "fileVersion": "20.4.0.48"
+          }
+        }
+      },
+      "Syncfusion.Licensing/20.4.0.48": {
+        "runtime": {
+          "lib/net7.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "20.4.0.48",
+            "fileVersion": "20.4.0.48"
+          }
+        }
+      },
+      "Syncfusion.PdfExport.Net.Core/20.4.0.48": {
+        "runtime": {
+          "lib/net7.0/Syncfusion.PdfExport.Net.dll": {
+            "assemblyVersion": "20.4.0.48",
+            "fileVersion": "20.4.0.48"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
       "System.Diagnostics.DiagnosticSource/4.6.0": {},
       "System.IO.FileSystem.AccessControl/5.0.0": {
@@ -711,6 +777,48 @@
       "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
       "path": "microsoft.netcore.platforms/5.0.0",
       "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
+    },
+    "Syncfusion.Blazor.Charts/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TFyMx/Xyytelbcsn5pNMRZOidxDvA61JmQWOM3CxOz9X5+DVY2KwHuSZWk800aHI35/9t+E230JK4Ipk4EMavA==",
+      "path": "syncfusion.blazor.charts/20.4.0.48",
+      "hashPath": "syncfusion.blazor.charts.20.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Blazor.Core/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lGBBo4I9K66PyU6JfH3uVulOf49dAxdYJYYIwsppyyXMfFWxIJemU90Tmb2m//n6Sd6HM8UvE2jkD35J/Skfkg==",
+      "path": "syncfusion.blazor.core/20.4.0.48",
+      "hashPath": "syncfusion.blazor.core.20.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Blazor.Data/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-502xwlylH7PBdYHeskKE0xO0cPXoKT7kW3c/CRVbH70g4577TRMqmecvwIBIkMjVa2Va0I/6MlHxizK5/62Ieg==",
+      "path": "syncfusion.blazor.data/20.4.0.48",
+      "hashPath": "syncfusion.blazor.data.20.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Blazor.DataVizCommon/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DfzsiGbl5IxU9z+glyGot3A6WW5Z9Ie9otW1o6mMUYdl4qZuVxmlXhuDBoHKn18q5689+WbGxEXVbWl1gcS/CQ==",
+      "path": "syncfusion.blazor.datavizcommon/20.4.0.48",
+      "hashPath": "syncfusion.blazor.datavizcommon.20.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o9VL4Aeyf7SWgEB0wLxYWLnRCfPZ7AWivdfyV73hZSdSy57nHPoMOQFx8O9rA7vbtM35fWwGhxcfpind3puwAA==",
+      "path": "syncfusion.licensing/20.4.0.48",
+      "hashPath": "syncfusion.licensing.20.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.PdfExport.Net.Core/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AZQ2ac/7UWm31pIYXaZZgK0EZuqzY7KadobFAIoMTUwtvezt9nH00rQQJvJxpMD2pEVi2D/5PtZ84zI+cHnW5g==",
+      "path": "syncfusion.pdfexport.net.core/20.4.0.48",
+      "hashPath": "syncfusion.pdfexport.net.core.20.4.0.48.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

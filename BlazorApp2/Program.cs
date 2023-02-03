@@ -3,6 +3,7 @@ using Azure.Identity;
 using BlazorApp2.Data;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,9 @@ builder.Services.AddHttpClient();
 
 builder.Configuration.AddAzureKeyVault(new Uri($"https://{builder.Configuration["KeyVaultName"]}.vault.azure.net/"),
     new DefaultAzureCredential());
-    
+
+
+builder.Services.AddSyncfusionBlazor();
 
 
 var app = builder.Build();

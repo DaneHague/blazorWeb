@@ -5,11 +5,22 @@
 @inject IConfiguration Configuration
 @inherits CurrencyContainer
 
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Charts
+
 <h3>Currency</h3>
 
-<button class="btn btn-primary" onclick="@getCurrency()">Update Currency</button>
+<button class="btn btn-primary" onclick="@getCurrency">Update Currency</button>
 
-<table class="table ">
+    <SfChart>
+        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category"></ChartPrimaryXAxis>
+        <ChartSeriesCollection>
+        <ChartSeries DataSource="@currChart" XName="baseType" YName="stackSize" Type="ChartSeriesType.Column">
+            </ChartSeries>
+        </ChartSeriesCollection>
+    </SfChart>
+
+<table class="table table-bordered" style="padding-top: 10px">
     <thead>
         <tr>
             <th>
@@ -35,14 +46,12 @@
     </tbody>
 </table>
 
-<CurrencyContainer currName="trololol" currStackSize="" currMaxStackSize="">
+<CurrencyContainer currName="Passed param" currStackSize="" currMaxStackSize="">
 
 </CurrencyContainer>
 
 
 @code {
-
-
 
     protected async Task getCurrency()
     {
@@ -69,13 +78,16 @@
 
             req.Content = new StringContent(JsonSerializer.Serialize(currency), System.Text.Encoding.UTF8, "application/json");
             var rsp = await tst.SendAsync(req);
-            
 
+            await OnInitializedAsync();
+
+            StateHasChanged();
         }
 
     }
 
     List<CurrencyItem> currencyList = new List<CurrencyItem>();
+    List<CurrencyItem> currChart = new List<CurrencyItem>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -85,5 +97,17 @@
         var response = await client.SendAsync(request);
         var currency = await response.Content.ReadFromJsonAsync<List<CurrencyItem>>();
         currencyList = currency;
+
+        
+
+        foreach (var item in currencyList)
+        {
+            if (item.typeLine == "Divine Orb" || item.typeLine == "Chaos Orb")
+            {
+                currChart.Add(item);
+            }
+        }
+
+        StateHasChanged();
     }
 }

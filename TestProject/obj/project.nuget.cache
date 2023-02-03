@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YzZSG2cS8lYbKlFRoBTdLjnXcxbjtqRvRktW1RimCLEymFY7ntPPCZf0k6U7qgHIBUC66MyuIgF5kLpI766fsg==",
+  "dgSpecHash": "QoxFBAOqed9ppgrcQmZQeYSrG7+s0OtPqxqIxdFVVTnYtoeSS0ZUaWZ/2+eTWqeYW9UUE63wlOoEr8f7fa3+Ug==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dane\\source\\repos\\BlazorApp2\\TestProject\\TestProject.csproj",
   "expectedPackageFiles": [
@@ -73,6 +73,12 @@
     "C:\\Users\\Dane\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.blazor.charts\\20.4.0.48\\syncfusion.blazor.charts.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.blazor.core\\20.4.0.48\\syncfusion.blazor.core.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.blazor.data\\20.4.0.48\\syncfusion.blazor.data.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.blazor.datavizcommon\\20.4.0.48\\syncfusion.blazor.datavizcommon.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.licensing\\20.4.0.48\\syncfusion.licensing.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.pdfexport.net.core\\20.4.0.48\\syncfusion.pdfexport.net.core.20.4.0.48.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

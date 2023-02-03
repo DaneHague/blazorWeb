@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "98zWv7i/daiA1L4/uhYPcEDkKqqOxPDqoZte0OJmibqitme5i6t2bR7SbE1+kgzBlnb9Icpsp9rTzM4AlYQ2IA==",
+  "dgSpecHash": "VUTw8CfKRkVqJT5yam6r4G+aLRZWjQRQW6Tutq6F1CTSwDpNk7gE7d/S2VuK+fE3LbFD8TFvUq58n9eVyaPMsA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dane\\source\\repos\\BlazorApp2\\BlazorApp2\\BlazorApp2.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,12 @@
     "C:\\Users\\Dane\\.nuget\\packages\\microsoft.jsinterop\\7.0.0\\microsoft.jsinterop.7.0.0.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.0\\microsoft.jsinterop.webassembly.7.0.0.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.blazor.charts\\20.4.0.48\\syncfusion.blazor.charts.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.blazor.core\\20.4.0.48\\syncfusion.blazor.core.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.blazor.data\\20.4.0.48\\syncfusion.blazor.data.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.blazor.datavizcommon\\20.4.0.48\\syncfusion.blazor.datavizcommon.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.licensing\\20.4.0.48\\syncfusion.licensing.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\Dane\\.nuget\\packages\\syncfusion.pdfexport.net.core\\20.4.0.48\\syncfusion.pdfexport.net.core.20.4.0.48.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
     "C:\\Users\\Dane\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",

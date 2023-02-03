@@ -51,3 +51,9 @@ C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Debug\net7.0\refint\BlazorA
 C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Debug\net7.0\BlazorApp2.pdb
 C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Debug\net7.0\BlazorApp2.genruntimeconfig.cache
 C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\obj\Debug\net7.0\ref\BlazorApp2.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Syncfusion.Blazor.Charts.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Syncfusion.Blazor.Core.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Syncfusion.Blazor.Data.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Syncfusion.Blazor.DataVizCommon.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Syncfusion.Licensing.dll
+C:\Users\Dane\source\repos\BlazorApp2\BlazorApp2\bin\Debug\net7.0\Syncfusion.PdfExport.Net.dll

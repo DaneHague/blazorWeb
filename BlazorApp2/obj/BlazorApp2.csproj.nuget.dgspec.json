@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[4.49.1, )"
             },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[20.4.0.48, )"
+            },
             "bunit.core": {
               "target": "Package",
               "version": "[1.14.4, )"
