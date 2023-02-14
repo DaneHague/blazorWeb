@@ -15,6 +15,7 @@
         public string typeLine { get; set; }
         public string baseType { get; set; }
         public bool identified { get; set; }
+        public List<string> explicitMods { get; set; }
         public int ilvl { get; set; }
         public string rewardText { get; set; }
         public string cardText { get; set; }

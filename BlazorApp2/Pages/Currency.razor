@@ -68,10 +68,20 @@
             List<CurrencyItem> currency = stash.stash.items;
             foreach (var item in currency)
             {
-                item.cardText = item.typeLine;
+                if (item.explicitMods != null)
+                {
+                    foreach (var mod in item.explicitMods)
+                    {
+                        item.cardText = item.explicitMods[0];
+                    }
+                } else
+                {
+                    // So we don't send null
+                    item.cardText = "";
+                }
+
                 item.artFilename = "";
                 item.rewardText = "";
-
             }
 
             var req = new HttpRequestMessage(HttpMethod.Post, $"{Configuration.GetSection("MyApiEndpoint").Value}/Currencies");
